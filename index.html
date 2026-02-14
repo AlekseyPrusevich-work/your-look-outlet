@@ -84,49 +84,52 @@
 
   <!-- Секция 3: Categories -->
   <section class="catalog-section">
-    <div class="catalog-section__container">
-      <div class="catalog-section__content">
-        <h2 class="catalog-section__title">Огромный Выбор для Всей Семьи</h2>
-        <p class="catalog-section__intro">Мы предлагаем широкий и эксклюзивный ассортимент, который регулярно
-          пополняется новыми моделями. Ваш идеальный образ ждет вас в самом центре Барановичей.</p>
+    <div class="container">
+      <div class="catalog-section__container">
+        <div class="catalog-section__content">
+          <div>
+            <h2 class="catalog-section__title">Огромный Выбор для Всей Семьи</h2>
 
-        <ul class="category-list">
-          <li class="category-list__item">
-            <i class="fa-solid fa-person-dress category-list__icon"></i>
-            <div class="category-list__info">
-              <h3 class="category-list__name">Женская Одежда</h3>
-              <p class="category-list__desc">Трендовые платья, стильные костюмы и повседневные луки.</p>
-            </div>
-          </li>
-          <li class="category-list__item">
-            <i class="fa-solid fa-person category-list__icon"></i>
-            <div class="category-list__info">
-              <h3 class="category-list__name">Мужская Одежда</h3>
-              <p class="category-list__desc">От классики до кэжуал — создайте свой неповторимый стиль.</p>
-            </div>
-          </li>
-          <li class="category-list__item">
-            <i class="fa-solid fa-shirt category-list__icon"></i>
-            <div class="category-list__info">
-              <h3 class="category-list__name">Детская Одежда</h3>
-              <p class="category-list__desc">Комфорт и качество для самых маленьких модников.</p>
-            </div>
-          </li>
-        </ul>
-      </div>
-      <div class="catalog-section__image-wrapper">
-        <img src="https://via.placeholder.com/500x800?text=Fashion+Group" alt="Коллекция одежды"
-          class="catalog-section__image">
+            <p class="catalog-section__intro">
+              Мы предлагаем широкий и эксклюзивный ассортимент, который регулярно
+              пополняется новыми моделями. Ваш идеальный образ ждет вас в самом центре 
+              Барановичей.
+            </p>
+
+            <ul class="category-list">
+              <li class="category-list__item">
+                <img src="/images/icon/woman.svg" alt="">
+                <h3 class="category-list__name">Женская Одежда</h3>
+                <p class="category-list__desc">Трендовые платья, стильные костюмы и повседневные луки.</p>
+              </li>
+              <li class="category-list__item">
+                <img src="/images/icon/men.svg" alt="">
+                <h3 class="category-list__name">Мужская Одежда</h3>
+                <p class="category-list__desc">От классики до кэжуал — создайте свой неповторимый стиль.</p>
+              </li>
+              <li class="category-list__item">
+                <img src="/images/icon/t-shirt.svg" alt="">
+                <h3 class="category-list__name">Детская Одежда</h3>
+                <p class="category-list__desc">Комфорт и качество для самых маленьких модников.</p>
+              </li>
+            </ul>
+          </div>
+          
+          <div class="catalog-section__image-wrapper">
+            <img src="/images/catalog.jpg" alt="Коллекция одежды" class="catalog-section__image">
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
   <!-- Секция 4: Location & Schedule -->
   <section class="location-section">
-    <div class="location-section__container">
-      <div class="location-section__top">
+    <div class="container">
+      <div class="location-section__container">
+        <h2 class="location-section__title">Наше Местоположение и График Работы</h2>
+
         <div class="location-section__info">
-          <h2 class="location-section__title">Наше Местоположение и График Работы</h2>
           <div class="location-section__address-block">
             <p class="location-section__label">Ждем Вас по адресу:</p>
             <p class="location-section__address">
@@ -137,22 +140,20 @@
               комфортным для каждого!
             </p>
           </div>
+          <div class="location-section__map-wrapper">
+            <img src="/images/map.jpg" alt="Карта проезда" class="location-section__map">
+          </div>
         </div>
-        <div class="location-section__map-wrapper">
-          <!-- Замените заглушку на реальную карту или изображение -->
-          <img src="https://via.placeholder.com/600x450?text=Map+Image" alt="Карта проезда"
-            class="location-section__map">
-        </div>
-      </div>
 
-      <div class="schedule-grid">
-        <div class="schedule-grid__item">
-          <h3 class="schedule-grid__days">Понедельник - Пятница</h3>
-          <p class="schedule-grid__time">11:00 – 19:00</p>
-        </div>
-        <div class="schedule-grid__item">
-          <h3 class="schedule-grid__days">Суббота - Воскресенье</h3>
-          <p class="schedule-grid__time">11:00 – 17:00</p>
+        <div class="schedule-grid">
+          <div class="schedule-grid__item">
+            <h3 class="schedule-grid__days">Понедельник - Пятница</h3>
+            <p class="schedule-grid__time">11:00 – 19:00</p>
+          </div>
+          <div class="schedule-grid__item">
+            <h3 class="schedule-grid__days">Суббота - Воскресенье</h3>
+            <p class="schedule-grid__time">11:00 – 17:00</p>
+          </div>
         </div>
       </div>
     </div>
@@ -160,39 +161,57 @@
 
   <!-- Секция 5: Benefits -->
   <section class="benefits-section">
-    <div class="benefits-section__container">
-      <h2 class="benefits-section__title">Выгода для Каждого Покупателя</h2>
-      <p class="benefits-section__intro">
-        В YOUR LOOK мы ценим наших клиентов. Мы разработали систему лояльности и постоянно предлагаем скидки, чтобы ваш
-        шопинг был не только приятным, но и выгодным!
-      </p>
+    <div class="container">
+      <div class="benefits-section__container">
+        <h2 class="benefits-section__title">Выгода для Каждого Покупателя</h2>
+        <p class="benefits-section__intro">
+          В <span>YOUR LOOK</span> мы ценим наших клиентов. Мы разработали систему лояльности и постоянно предлагаем скидки, чтобы ваш
+          шопинг был не только приятным, но и выгодным!
+        </p>
 
-      <div class="benefits-grid">
-        <!-- Левая часть -->
-        <div class="benefits-grid__side benefits-grid__side--left">
-          <div class="benefit-item benefit-item--right-align">
-            <h3 class="benefit-item__title">Постоянные Скидки</h3>
-            <p class="benefit-item__text">Регулярные распродажи на актуальные коллекции.</p>
+        <div class="benefits-grid">
+          <!-- Левая часть -->
+          <div class="benefits-grid__side">
+            <div class="benefit-item">
+              <h3 class="benefit-item__title">Постоянные Скидки</h3>
+              <p class="benefit-item__text">Регулярные распродажи на актуальные коллекции.</p>
+            </div>
           </div>
-        </div>
 
-        <!-- Центр с диаграммой -->
-        <div class="benefits-grid__center">
-          <div class="benefits-diagram">
-            <img src="https://via.placeholder.com/300?text=Diagram" alt="Диаграмма выгоды"
-              class="benefits-diagram__image">
+          <!-- Центр с диаграммой -->
+          <div class="benefits-grid__center">
+            <div class="benefits-diagram">
+              <div class="benefits-diagram__part-wrapper">
+                <div class="benefits-diagram__part">
+                  <img src="/images/benefits-1.svg" alt="">
+                  <img class="benefits-diagram__icon benefits-diagram__icon--1" src="/images/icon/sale.svg" alt="">
+                </div>
+              </div>
+              <div class="benefits-diagram__part-wrapper">
+                <div class="benefits-diagram__part">
+                  <img src="/images/benefits-2.svg" alt="">
+                  <img class="benefits-diagram__icon benefits-diagram__icon--2" src="/images/icon/loyalty.svg" alt="">
+                </div>
+              </div>
+              <div class="benefits-diagram__part-wrapper">
+                <div class="benefits-diagram__part">
+                  <img src="/images/benefits-3.svg" alt="">
+                  <img class="benefits-diagram__icon benefits-diagram__icon--3" src="/images/icon/gift.svg" alt="">
+                </div>
+              </div>
+            </div>  
           </div>
-        </div>
 
-        <!-- Правая часть -->
-        <div class="benefits-grid__side benefits-grid__side--right">
-          <div class="benefit-item">
-            <h3 class="benefit-item__title">Программа Лояльности</h3>
-            <p class="benefit-item__text">Накопительные бонусы и специальные предложения.</p>
-          </div>
-          <div class="benefit-item">
-            <h3 class="benefit-item__title">Сюрпризы и Акции</h3>
-            <p class="benefit-item__text">Сезонные предложения и подарки для клиентов.</p>
+          <!-- Правая часть -->
+          <div class="benefits-grid__side">
+            <div class="benefit-item">
+              <h3 class="benefit-item__title">Программа Лояльности</h3>
+              <p class="benefit-item__text">Накопительные бонусы и специальные предложения.</p>
+            </div>
+            <div class="benefit-item">
+              <h3 class="benefit-item__title">Сюрпризы и Акции</h3>
+              <p class="benefit-item__text">Сезонные предложения и подарки для клиентов.</p>
+            </div>
           </div>
         </div>
       </div>

@@ -1,6 +1,7 @@
 /* Базовые стили */
 :root {
     --text-color: #1D1D1B;
+    --text-gray: #61615c;
     --bg-gray: #f4f4f4;
     --accent-color: #000;
     --font-heading: 'Tomorrow', sans-serif;
@@ -20,7 +21,7 @@ body {
     padding: 0;
 }
 
-p, h1, h2, h3 {
+p, h1, h2, h3, ul {
     margin-top: 0;
     margin-bottom: 0;
 }
@@ -178,18 +179,26 @@ img {
 }
 
 /* Секция 3: Catalog */
+.catalog-section__container {
+    padding-top: 18px;
+    padding-bottom: 18px;
+}
+
 .catalog-section__content {
-    flex: 1;
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    color: var(--text-gray);
 }
 
 .catalog-section__title {
-    font-family: var(--font-heading);
-    font-size: 2.2rem;
+    color: var(--text-color);
+    font-size: 36px;
     margin-bottom: 20px;
 }
 
 .catalog-section__intro {
-    margin-bottom: 30px;
+    margin-bottom: 28px;
 }
 
 .category-list {
@@ -199,149 +208,146 @@ img {
 
 .category-list__item {
     display: flex;
+    flex-direction: column;
     align-items: flex-start;
-    gap: 20px;
+    gap: 8px;
     margin-bottom: 25px;
 }
 
-.category-list__icon {
-    font-size: 1.8rem;
-    width: 40px;
-    text-align: center;
+.category-list__item img {
+    min-width: 54px;
+    width: 54px;
+    height: 54px;
 }
 
 .category-list__name {
-    font-size: 1.1rem;
+    margin-top: 8px;
+    font-size: 22px;
     font-weight: 600;
-    margin: 0 0 5px 0;
-}
-
-.category-list__desc {
-    font-size: 0.9rem;
-    margin: 0;
 }
 
 .catalog-section__image-wrapper {
-    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 440px;
+    width: 200%;
+    height: 820px;
+    overflow: hidden;
 }
 
-/* Адаптивность для мобильных устройств */
-@media (max-width: 768px) {
-    .promo-section__container,
-    .welcome-section__container,
-    .catalog-section__container {
-        flex-direction: column;
-        text-align: center;
-    }
-    
-    .promo-section__title {
-        font-size: 2rem;
-    }
-
-    .feature-card__header {
-        left: 20px;
-        transform: none;
-    }
-    
-    .category-list__item {
-        flex-direction: column;
-        align-items: center;
-    }
+.catalog-section__image-wrapper img {
+    object-fit: cover;
+    min-width: 100%;
+    min-height: 100%;
 }
 
 /* --- Секция Местоположения --- */
-.location-section__top {
-    display: flex;
-    gap: 40px;
-    align-items: flex-start;
-    margin-bottom: 40px;
+.location-section__container {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    margin-right: 60px;
 }
 
 .location-section__info {
-    flex: 1;
+    display: flex;
+    gap: 40px;
+    margin-bottom: 40px;
 }
 
 .location-section__title {
-    font-family: var(--font-heading);
-    font-size: 2rem;
-    margin-bottom: 30px;
+    font-size: 36px;
+    margin-bottom: 48px;
 }
 
 .location-section__label {
     font-weight: 600;
+    font-size: 22px;
     margin-bottom: 10px;
 }
 
 .location-section__address {
-    font-size: 1.1rem;
+    font-size: 22px;
+    font-weight: 600;
+    color: var(--text-gray);
     margin-bottom: 20px;
 }
 
 .location-section__subtext {
-    font-style: italic;
-    font-size: 0.9rem;
-    color: #666;
+    color: var(--text-gray);
     max-width: 400px;
 }
 
 .location-section__map-wrapper {
-    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 600px;
+    width: 200%;
+    height: 600px;
+    overflow: hidden;
+}
+
+.location-section__map-wrapper img {
+    object-fit: cover;
+    min-width: 100%;
+    min-height: 100%;
 }
 
 /* Сетка графика работы */
 .schedule-grid {
     display: flex;
-    background-color: #f0ecec; /* Светло-бежевый/серый фон как на фото */
+    background-color: #f0ecec; 
 }
 
 .schedule-grid__item {
     flex: 1;
-    padding: 30px 40px;
-    border-right: 1px solid #ddd;
+    padding: 18px;
+}
+
+.schedule-grid__item:first-child {
+    border-right: 1px solid #d6d0d0;
 }
 
 .schedule-grid__item:last-child {
-    border-right: none;
+    border-left: 1px solid #d6d0d0;
 }
 
 .schedule-grid__days {
-    font-family: var(--font-heading);
-    font-size: 1.2rem;
-    margin: 0 0 10px 0;
-    color: #555;
+    font-size: 28px;
+    color: #61615C;
 }
 
 .schedule-grid__time {
-    font-size: 1.1rem;
-    margin: 0;
-    color: #777;
+    font-size: 22px;
+    font-family: var(--font-heading);
+    color: #61615C;
+    margin-top: 8px;
 }
 
 /* --- Секция Выгоды --- */
-.benefits-section {
-    padding: 80px 0;
-    text-align: center;
+.benefits-section__container {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    margin-right: 60px;
+    color: var(--text-gray);
 }
 
 .benefits-section__title {
-    font-family: var(--font-heading);
-    font-size: 2rem;
-    margin-bottom: 20px;
+    font-size: 36px;
+    margin-bottom: 36px;
+    color: var(--text-color);
 }
 
-.benefits-section__intro {
-    max-width: 800px;
-    margin: 0 auto 60px;
-    font-size: 0.95rem;
+.benefits-section__intro span {
+    font-family: var(--font-heading);
 }
 
 .benefits-grid {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 30px;
-    max-width: 1000px;
-    margin: 0 auto;
+    gap: 20px;
 }
 
 .benefits-grid__side {
@@ -352,7 +358,22 @@ img {
 }
 
 .benefits-grid__center {
-    flex: 0 0 300px;
+    flex: 0 0 33%;
+}
+
+.benefits-diagram {
+    display: flex;
+    align-items: center;
+    position: relative;
+    height: 340px;
+}
+
+.benefits-diagram__part-wrapper {
+    position: absolute;
+}
+
+.benefits-diagram__part {
+    position: relative;
 }
 
 .benefits-diagram__image {
@@ -365,53 +386,31 @@ img {
     text-align: left;
 }
 
-.benefit-item--right-align {
-    text-align: right;
-}
-
 .benefit-item__title {
-    font-size: 1.1rem;
+    font-size: 22px;
     font-weight: 600;
     margin-bottom: 10px;
 }
 
-.benefit-item__text {
-    font-size: 0.9rem;
-    color: #555;
-    margin: 0;
+.benefits-diagram__icon {
+    position: absolute;
+    width: 28px;
+    height: 28px;
 }
 
-/* Адаптивность для новых блоков */
-@media (max-width: 768px) {
-    .location-section__top {
-        flex-direction: column;
-    }
+.benefits-diagram__icon--1 {
+    top: 41%;
+    left: 13%;
+}
 
-    .schedule-grid {
-        flex-direction: column;
-    }
+.benefits-diagram__icon--2 {
+    top: 22%;
+    right: 22%;
+}
 
-    .schedule-grid__item {
-        border-right: none;
-        border-bottom: 1px solid #ddd;
-    }
-
-    .benefits-grid {
-        flex-direction: column;
-        gap: 40px;
-    }
-
-    .benefits-grid__side {
-        gap: 30px;
-    }
-
-    .benefit-item, .benefit-item--right-align {
-        text-align: center;
-    }
-
-    .benefits-grid__center {
-        order: -1; /* Картинка диаграммы будет сверху на мобильных */
-    }
+.benefits-diagram__icon--3 {
+    bottom: 16%;
+    right: 34%;
 }
 
 /* --- Секция Доставки --- */
