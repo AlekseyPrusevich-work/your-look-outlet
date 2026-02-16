@@ -738,6 +738,8 @@ img {
 .contact-grid__value {
     font-size: 22px;
     font-weight: 700;
+    text-decoration: none;
+    color: var(--text-color);
 }
 
 .contact-section__footer-text {
