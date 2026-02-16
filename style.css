@@ -4,7 +4,6 @@
     --text-gray: #61615c;
     --bg-gray: #f4f4f4;
     --accent-color: #000;
-    --font-heading: 'Tomorrow', sans-serif;
     --font-body: serif;
 }
 
@@ -70,10 +69,6 @@ img {
     font-size: 36px;
     font-weight: 600;
     margin-bottom: 28px;
-}
-
-.font-tomorrow {
-    font-family: var(--font-heading);
 }
 
 /* Секция 1: Hero */
@@ -416,7 +411,6 @@ img {
 
 .schedule-grid__time {
     font-size: 22px;
-    font-family: var(--font-heading);
     color: #61615C;
     margin-top: 8px;
 }
@@ -445,10 +439,6 @@ img {
 
 .benefits-section .section-title {
     color: var(--text-color);
-}
-
-.benefits-section__intro span {
-    font-family: var(--font-heading);
 }
 
 .benefits-grid {
@@ -643,10 +633,6 @@ img {
 
 .why-us-section__container .section-title {
     color: var(--text-color);
-}
-
-.why-us-section__title span {
-    font-family: var(--font-heading);
 }
 
 .why-us-section__intro {
